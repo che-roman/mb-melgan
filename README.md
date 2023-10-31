@@ -4,7 +4,7 @@ Unofficial PyTorch implementation of [Multi-band MelGAN: Faster Waveform Generat
 Audio samples are available on the project [demo page](https://che-roman.github.io/mb-melgan/).
 
 ### Model
-I use _Identity_ as a shortcut connection (instead of _Linear_) in residual blocks and don't use _biases_, so my implementation has slightly fewer parameters than described in the paper (_1.52_ vs _1.91_).
+I use _Identity_ as a shortcut connection (instead of _Linear_) in residual blocks and don't use _biases_, so my implementation has slightly fewer parameters than described in the paper (1.52 vs 1.91).
 
 ### PQMF
 The cutoff-ratio of the pseudo quadratue nirror filter bank can be set to a specific value or to _None_. In the latter case, the optimal filter will be automatically synthesized before the start of training.
