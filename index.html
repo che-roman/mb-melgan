@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-band MelGAN demo-page</title>
+</head>
+<body>
+	<div class="container" style="text-align: center;">
+	
+		<header>
+		    <h1>Audio samples of multi-band MelGAN vocoder</h1>
+		</header>
+
+		<div style="display: inline-block;">
+			<ul><li style="text-align: left;">The vocoder was trained for 500K iterations on the <a href="https://keithito.com/LJ-Speech-Dataset">LJSpeech dataset</a></li></ul>
+			<ul><li style="text-align: left;">Source code: <a href="https://github.com/che-roman/mb-melgan">https://github.com/che-roman/mb-melgan</a></li></ul>
+			<ul><li style="text-align: left;">Use headphones to compare the original and predicted sound 🎧</li></ul>    
+		</div>
+
+		<br><br>	
+
+		<div style="display: inline-block;">
+			<a name="ss"><h2>Losses</h2></a>
+			<hr>
+			<img src="image/losses.png" alt="G-loss, D-loss and stft-loss">
+		</div>
+	
+		<br><br>
+		
+		<div style="display: inline-block;">
+			<a name="ss"><h2>Spectrograms of the sample</h2></a>
+			<hr>
+			<table>
+				<tbody>
+				<tr>
+					<td>original</td>
+					<td>predicted</td>
+				</tr>
+				<tr>
+					<td><img src="image/test2_orig.png" alt="original spectrogram"></td>
+					<td><img src="image/test2_pred.png" alt="predicted spectrogram"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<br><br>
+		
+		<div style="display: inline-block;">
+			<a name="as"><h2>Audio samples</h2></a>
+			<hr>
+			<table>
+				<tbody>
+				<tr>
+					<td>original</td>
+					<td>predicted</td>
+				</tr>
+				<tr>
+					<td><audio controls="" preload="none"><source src="audio/test1_orig.wav"></audio></td>
+					<td><audio controls="" preload="none"><source src="audio/test1_pred.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" preload="none"><source src="audio/test2_orig.wav"></audio></td>
+					<td><audio controls="" preload="none"><source src="audio/test2_pred.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" preload="none"><source src="audio/test3_orig.wav"></audio></td>
+					<td><audio controls="" preload="none"><source src="audio/test3_pred.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" preload="none"><source src="audio/test4_orig.wav"></audio></td>
+					<td><audio controls="" preload="none"><source src="audio/test4_pred.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" preload="none"><source src="audio/test5_orig.wav"></audio></td>
+					<td><audio controls="" preload="none"><source src="audio/test5_pred.wav"></audio></td>
+				</tr>
+				</tbody>
+			</table>
+			<br><br><hr>
+			<div style="display: inline-block;">Copyright &copy; 2023 Chudnov Roman. All rights reserved.</div>
+			<br><br><br>
+		</div>
+
+	</div>
+  </body>
+</html>
