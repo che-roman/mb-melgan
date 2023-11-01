@@ -43,7 +43,7 @@ x = torch.from_numpy(librosa.load(librosa.example("libri3"), sr=sr)[0])
 # wav-to-mel
 y = vocoder.encode(x)
 with torch.no_grad():
-	# mel-to-wav
+    # mel-to-wav
     x_hat = vocoder.decode(y)
 
 # play restored wav
